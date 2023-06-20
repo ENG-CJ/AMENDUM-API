@@ -55,7 +55,8 @@ nav ul li{
     font-family: sans-serif;
 }
 .container{
-    margin: 20px 320px;
+    margin: 0 auto;
+    padding: 20px 200px;
     /* text-align: center; */
 }
 
@@ -132,7 +133,9 @@ top: 290px;
     position: relative;
     margin-bottom: 20px;
     background-color: white;
-    box-shadow: 2px 0px -2px 2px rgba(0, 0, 0, 0.09);
+   box-shadow: -1px 0px 15px -1px rgba(0,0,0,0.3);
+-webkit-box-shadow: -1px 0px 15px -1px rgba(0,0,0,0.3);
+-moz-box-shadow: -1px 0px 15px -1px rgba(0,0,0,0.3);
     padding: 30px;
     width: 300px;
 
@@ -150,4 +153,35 @@ top: 290px;
 position: absolute;
 top: 0;
 right: 0;
+}
+
+
+@media (max-width: 802px){
+    .header{
+        position: sticky;
+        top: 0;
+    }
+    .container{
+        width: 100%;
+        margin: 0 auto;
+        padding: 10px;
+        /* background-color: red; */
+    }
+    .title{
+        margin-bottom: 40px;
+    }
+    .title h1{
+        font-size: 20px;
+    }
+    .definitions{
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    .title-definition{
+        margin: 0 auto;
+    }
+    .feature{
+        width: 100%;
+        /* margin: 0 auto; */
+    }
 }
